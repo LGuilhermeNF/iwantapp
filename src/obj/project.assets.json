@@ -178,6 +178,18 @@
           }
         }
       },
+      "Microsoft.EntityFrameworkCore.Tools/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0/_._": {}
+        }
+      },
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
         "type": "package",
         "build": {
@@ -1112,6 +1124,30 @@
         "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.xml",
         "microsoft.entityframeworkcore.sqlserver.6.0.0.nupkg.sha512",
         "microsoft.entityframeworkcore.sqlserver.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Tools/6.0.0": {
+      "sha512": "m9e6nFnkyRdKcrTFO8rl3ZihCIKrYdECw+fHZVbKz6TBMwKhih/N0sjPnNt0k7sZPvI8izKPkh1d+z4OR2qgXQ==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.tools/6.0.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net6.0/_._",
+        "microsoft.entityframeworkcore.tools.6.0.0.nupkg.sha512",
+        "microsoft.entityframeworkcore.tools.nuspec",
+        "tools/EntityFrameworkCore.PS2.psd1",
+        "tools/EntityFrameworkCore.PS2.psm1",
+        "tools/EntityFrameworkCore.psd1",
+        "tools/EntityFrameworkCore.psm1",
+        "tools/about_EntityFrameworkCore.help.txt",
+        "tools/init.ps1",
+        "tools/net461/any/ef.exe",
+        "tools/net461/win-x86/ef.exe",
+        "tools/netcoreapp2.0/any/ef.dll",
+        "tools/netcoreapp2.0/any/ef.runtimeconfig.json"
       ]
     },
     "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
@@ -2181,27 +2217,28 @@
       "Microsoft.EntityFrameworkCore >= 6.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.0",
+      "Microsoft.EntityFrameworkCore.Tools >= 6.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\guilh\\.nuget\\packages\\": {},
+    "C:\\Users\\leandro.fernandes\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\Curso Web API\\IWantApp\\src\\IWantApp.csproj",
+      "projectUniqueName": "C:\\Projetos\\C#\\iwantapp\\src\\IWantApp.csproj",
       "projectName": "IWantApp",
-      "projectPath": "C:\\Projetos\\Curso Web API\\IWantApp\\src\\IWantApp.csproj",
-      "packagesPath": "C:\\Users\\guilh\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\Curso Web API\\IWantApp\\src\\obj\\",
+      "projectPath": "C:\\Projetos\\C#\\iwantapp\\src\\IWantApp.csproj",
+      "packagesPath": "C:\\Users\\leandro.fernandes\\.nuget\\packages\\",
+      "outputPath": "C:\\Projetos\\C#\\iwantapp\\src\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\guilh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\leandro.fernandes\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2210,6 +2247,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2242,6 +2280,12 @@
             "target": "Package",
             "version": "[6.0.0, )"
           },
+          "Microsoft.EntityFrameworkCore.Tools": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[6.0.0, )"
+          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.2.3, )"
@@ -2266,7 +2310,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }
