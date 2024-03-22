@@ -14,7 +14,7 @@ public static class CategoryPut
     {
         var category = context.Categories.Where(c => c.Id == id).FirstOrDefault();
         category.Name = categoryRequest.Name;
-        category.Active = categoryRequest.Active;
+        category.Active = categoryRequest.Active; //
 
         context.SaveChanges();
 
