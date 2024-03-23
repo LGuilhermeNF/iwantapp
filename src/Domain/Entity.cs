@@ -1,8 +1,9 @@
-﻿using IWantApp.Domain.Products;
+﻿using Flunt.Notifications;
+using IWantApp.Domain.Products;
 
 namespace IWantApp.Domain;
 
-public abstract class Entity
+public abstract class Entity : Notifiable<Notification>
 {
     public Entity()
     {
@@ -11,8 +12,8 @@ public abstract class Entity
 
     public Guid Id { get; set; }
     public string Name { get; set; }
-    public string CreateBy { get; set; }
+    public string CreatedBy { get; set; }
     public DateTime CreatedOn { get; set; }
-    public string UpdateBy { get; set; }
+    public string UpdatedBy { get; set; }
     public DateTime UpdatedOn { get; set; }
 }
