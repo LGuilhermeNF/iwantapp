@@ -129,3 +129,4 @@ C:\Projetos\C#\iwantapp\src\obj\Debug\net6.0\IWantApp.pdb
 C:\Projetos\C#\iwantapp\src\obj\Debug\net6.0\IWantApp.genruntimeconfig.cache
 C:\Projetos\C#\iwantapp\src\obj\Debug\net6.0\ref\IWantApp.dll
 C:\Projetos\Curso Web API\IWantApp\src\bin\Debug\net6.0\Flunt.dll
+C:\Projetos\Curso Web API\IWantApp\src\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
